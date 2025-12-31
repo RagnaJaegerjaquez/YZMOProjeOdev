@@ -69,17 +69,13 @@ LR.fit(X_train, y_train)
 
 y_prediction = LR.predict(X_test)
 
-referans_tablo = pd.DataFrame({ # Tahmin ve gerçek fiyatları kolayca karşılaştırmak için Pandas Dataframe kullandım
+karsilastirma_tablo = pd.DataFrame({ # Tahmin ve gerçek fiyatları kolayca karşılaştırmak için Pandas Dataframe kullandım
     'Gerçek Fiyat': y_test,
     'Tahmini Fiyat': y_prediction
 })
 
 mae = mean_absolute_error(y_test, y_prediction)
 
-
+print(karsilastirma_tablo)
 print(f"Ortalama Mutlak Hata: {mae:.2f}")
-print(referans_tablo)
-
-
-
 
