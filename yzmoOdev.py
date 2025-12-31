@@ -1,6 +1,7 @@
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_absolute_percentage_error
 from matplotlib import pyplot as plt
 import pandas as pd
 
@@ -77,6 +78,7 @@ karsilastirma_tablo = pd.DataFrame({ # Tahmin ve gerçek fiyatları kolayca kar�
 })
 
 mae = mean_absolute_error(y_test, y_prediction)
+mape = mean_absolute_percentage_error(y_test, y_prediction)
 
 plt.scatter(y_test, y_prediction)
 plt.xlabel("Gerçek Fiyat")
@@ -85,4 +87,7 @@ plt.title("Gerçek Fiyat-Tahmin Fiyat Karşılaştırması")
 plt.show()
 
 print(karsilastirma_tablo)
+print()
 print(f"Ortalama Mutlak Hata: {mae:.2f}")
+print()
+print(f"Ortalama Mutlak Yüzdelik Hata: {mape}")
