@@ -5,4 +5,4 @@ Mainly created for a college project.
 Wish me luck!
 
 The results are in;
-https://hizliresim.com/blomkst
+https://hizliresim.com/2kg4nwr
