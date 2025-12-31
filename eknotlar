@@ -1,0 +1,2 @@
+Kaggle'da görülen veri setinin isminin farklı olmasının sebebi kullanım kolaylığı için kendi tarafımda isim değişikliği yapmamdı. 
+Dosya ismi "phone_price_dataset.csv" olarak değiştirilmediği sürece model çalışmayacaktır.
